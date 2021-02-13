@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Mod5Component implements OnInit {
 
+  count:number=1;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  increment():void {
+    this.count++;
+  }
+
+  decrement():void {
+    this.count--;
   }
 
 }

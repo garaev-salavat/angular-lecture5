@@ -1,1 +1,26 @@
-<p>mod5 works!</p>
+<h2>ngSwitch</h2>
+<hr />
+<div [ngSwitch]="count">
+  <ng-template [ngSwitchCase]="1">1 ({{ count }})</ng-template>
+  <ng-template [ngSwitchCase]="2">2 ({{ count }})</ng-template>
+  <ng-template [ngSwitchCase]="3">3 ({{ count }})</ng-template>
+  <ng-template [ngSwitchCase]="4">4 ({{ count }})</ng-template>
+  <ng-template ngSwitchDefault>Default ({{ count }})</ng-template>
+</div>
+<button (click)="increment()">+</button>
+{{ count }}
+<button (click)="decrement()">-</button>
+<hr />
+<div>
+    <span [ngSwitch]="count">
+    <p *ngSwitchCase="1">
+    1111
+    </p>
+    <p *ngSwitchCase="2">
+    2222
+    </p>
+    <p *ngSwitchDefault>
+    
+    </p>
+    </span>
+</div>
